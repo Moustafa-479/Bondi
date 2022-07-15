@@ -1,0 +1,224 @@
+:root {
+    --m-color: #19283f;
+    --s-color: #33d1cc;
+    --t-color: #ffc400;
+    --b-color: #ff3150;
+    --se-color: #eff7fa;
+}
+* {
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.main-btn {
+    background-color: var(--b-color);
+    color: var(--t-color);
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    transition: 0.3s;
+}
+.main-btn:hover {
+    background-color: #d32842;
+    color: var(--t-color);
+}
+.main-title::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 170px;
+    background-color: var(--s-color);
+    height: 2px;
+    border-radius: 3px;
+}
+.main-title + p {
+    max-width: 700px;
+}
+.navbar {
+    background-color: var(--m-color);
+}
+.navbar .navbar-nav .nav-link {
+    color: #FFF;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--s-color);
+}
+.navbar .navbar-toggler svg {
+    color: #FFF;
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar .nav-item .nav-link {
+    width: fit-content;
+}
+.navbar .nav-item .nav-link.span {
+    height: 100%;
+    width: 2px;
+    background-color: var(--s-color);
+}
+.navbar .nav-item .nav-link.search {
+    color: var(--s-color);
+}
+.landing {
+    background-color: var(--m-color);
+    height: calc(100vh);
+}
+.features .row .feat .icon-holder {
+    height: 200px;
+}
+.features .row .feat .icon-holder svg {
+    left: 50%;
+    transform: translate(-50%);
+}
+.features .row .feat .icon-holder .number{
+    color: var(--se-color);
+    font-size: 12rem;
+}
+.features .row .feat .icon-holder .icon{
+    color: var(--s-color);
+    font-size: 50px;
+}
+.features .row .feat h4 {
+    color: var(--t-color);
+}
+.portfolio .portfolio-links .nav-link {
+    color: black;
+    cursor: pointer;
+}
+.portfolio .portfolio-links .nav-link.active,
+.portfolio .portfolio-links .nav-link:hover {
+    background-color: var(--b-color);
+    color: var(--t-color);
+}
+.portfolio .portfolio-projects .image .text {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #33d1cc8a;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.portfolio {
+    background-color: #EEE;
+}
+.portfolio .portfolio-projects .image .text h4 {
+    color: #fff;
+}
+.portfolio .portfolio-projects .image .text p {
+    color: #FFF;
+}
+.portfolio .portfolio-projects .image img {
+    max-width: 100%;
+}
+.portfolio .portfolio-projects .active .text,
+.portfolio .portfolio-projects .image:hover .text {
+    display: flex;
+}
+.portfolio .portfolio-links li::selection {
+    background-color: transparent;
+}
+.team {
+    background-color: #EEE;
+}
+.team .title h2 {
+    color: var(--t-color);
+}
+.team .title p {
+    max-width: 1000px;
+}
+.team .row .box h4 {
+    color: #FFF;
+    background-color: var(--s-color);
+}
+.team .row .box blockquote {
+    width: 100%;
+    height: 115px;
+    font-size: 15px;
+}
+.clints .row div img::selection {
+    background-color: transparent;
+}
+.start-project {
+    background-color: var(--m-color);
+    color: #FFF;
+    height: 40vh;
+}
+.about .row .box p {
+    font-size: 13px;
+}
+.subscribe {
+    background-color: var(--t-color);
+    color: black;
+}
+.subscribe button {
+    color: var(--t-color);
+    background-color: var(--m-color);
+    border: none;
+    outline: none;
+}
+.subscribe button:focus {
+    outline: none;
+}
+.subscribe button:hover {
+    background-color: #111b2a;
+}
+.subscribe input {
+    background: transparent;
+    padding: 5px 0px 5px 0px;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    caret-color: #FFF;
+}
+.subscribe input::placeholder {
+    color: #FFF;
+}
+.subscribe input:focus {
+    outline: none;
+}
+.footer {
+    background-color: var(--m-color);
+}
+.footer p {
+    font-size: 15px;
+}
+.copyright {
+    color: var(--s-color);
+}
+.date span {
+    color: var(--t-color);
+}
+.pink {
+    color: #ff3298;
+}
+.footer ul li {
+    cursor: pointer;
+    transition: .3s;
+}
+.footer ul:not(last-of-type) li a{
+    transition: .3s;
+}
+.footer ul:not(last-of-type) li:hover a,
+.footer ul:not(last-of-type) li:hover {
+    margin-left: 10px;
+    color: var(--s-color) !important;
+}
